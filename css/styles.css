@@ -8,12 +8,34 @@ p{
 }
 
 :root {
-    --brand-color: #3f51b5;
+    --brand-color:#2196F3;
+    --logo-color:#000000;
+    --a-color:#000000;
+    --h-color:#000000;
+    --text-color:#757575;
+    --header-bg-color:#FFFFFF;
+    --border-heder-color:#ECECEC;
+    --order-bg-color:#2F303A;
+    --order-butt-color: #2196F3;
+    --order-butt-active-color:#188CE8;
+    --text-order-color: #ffffff;
+    --team-bg-color:#F5F4FA;
+    --team-item-bg-color:#ffffff;
+    --footer-bg-color:#2F303A;
+    --logo-footer-color:#ffffff;
+    --addres--footer-color: rgba(255, 255, 255, 0.6);
+    --address-location-color:#ffffff;
+    --filter-butt-color: #F5F4FA;
+    --filter-butt-active-color: #2196F3;
+    --filter-butt-active-text-color: #ffffff;
+    --item-elem-bg-color:#ffffff;
+    --item-elem-border-color: #eeeeee;
 }
 
 body{
-    color:#757575;
+    color:var(--text-color);
     font-family: 'Roboto', 'Verdana', 'Tahoma', sans-serif;
+    margin: 0;
 }
 
 ul{
@@ -25,13 +47,13 @@ ul{
 }
 
 a{
-    color: #000000;
+    color:var(--a-color);
     text-decoration: none;
 }
 
 h2,
 h3 {
-    color:#000000;
+    color:var(--h-color);
 }
 
 button{
@@ -54,8 +76,8 @@ nav,
 header { 
     width: 1600px;
     height: 80px;
-    background: #FFFFFF;
-    border: 1px solid #ECECEC;
+    background:var(--header-bg-color);
+    border: 1px solid var(--border-heder-color);
 }
 
 .logo {
@@ -71,7 +93,7 @@ header {
 }
 
 span {
-    color: #2196F3;
+    color:var(--brand-color);
 }
 
 .navig{
@@ -97,19 +119,19 @@ span {
 }
 
 .cont a{
-    color: #757575;
+    color:var(--text-color);
 }
 
 li > a:hover,
 li>a:focus
 {
-    color: #2196F3;
+    color:var(--brand-color);
 }
 
 .order{
     width: 1600px;
     height: 600px;
-    background: #2F303A;
+    background:var(--order-bg-color);
 }
 
 .order h1{
@@ -125,7 +147,7 @@ li>a:focus
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-    color: #FFFFFF;
+    color: var(--text-order-color);
 
 }
 
@@ -134,7 +156,7 @@ li>a:focus
     height: 50px;
     margin-left: 700px;
     margin-top: 30px;
-    background: #2196F3;
+    background:var(--order-butt-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     font-style: normal;
@@ -142,11 +164,11 @@ li>a:focus
     font-size: 16px;
     line-height: 1.88;
 
-    color: #FFFFFF;
+    color:var(--text-order-color);
 }
 
 .order button:hover{
-    background: #188CE8;
+    background:var(--order-butt-active-color);
 }
 
 
@@ -188,7 +210,7 @@ li>a:focus
     height: 648px;
     margin-top: 94px;
 
-    background: #F5F4FA;
+    background:var(--team-item-bg-color);
 }
 
 .team h2{
@@ -209,7 +231,7 @@ li>a:focus
     text-align: center;
     width: 270px;
     height: 368px;
-    background-color: #FFFFFF;
+    background-color:var(--team-item-bg-color);
     margin-left: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -223,13 +245,13 @@ li>a:focus
 footer{
     width: 1385px;
     height: 192px;
-    background: #2F303A;
+    background:var(--footer-bg-color);
     padding-top: 60px;
     padding-left: 215px;
 }
 
 footer .logo{
-    color: #ffffff;
+    color: var(--logo-footer-color);
     margin-left: 0;
 }
 
@@ -239,15 +261,14 @@ footer li{
     line-height: 1.71;
     letter-spacing: 0.03em;
     margin-top: 10px;
-    color: rgba(255, 255, 255, 0.6);
 }
 
 .contacts a{
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--addres--footer-color);
 }
 
 .contacts a[href^="https"] {
-    color: #ffffff;
+    color: var(--address-location-color);
 } 
 
 /* PHORTFOLIO */
@@ -258,17 +279,17 @@ footer li{
 }
 
 .filter button{
-    background: #F5F4FA;
+    background: var(--filter-butt-color);
     border-radius: 4px;
     padding: 6px 22px;
-    border: #F5F4FA;
+    border: var(--filter-butt-color);
 }
 
 .filter button:active{
-    background: #2196F3;
+    background: var(--filter-butt-active-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-    color: #FFFFFF;
+    color: var(--filter-butt-active-text-color);
 }
 
  .filter-elem{
@@ -289,8 +310,8 @@ footer li{
     box-sizing: border-box;
     width: 370px;
     height: 404px;
-    background: #FFFFFF;
-    border: 1px solid #EEEEEE;
+    background:var(--item-elem-bg-color);
+    border: 1px solid var(--item-elem-border-color);
     margin-left: 30px;
 }
 
